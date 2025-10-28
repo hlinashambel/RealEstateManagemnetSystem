@@ -1,4 +1,3 @@
-Hli_Sham, [10/16/2025 7:49 PM]
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -121,8 +120,6 @@ public:
         ifstream inFile("users.txt");
         if (!inFile) {
             // Create default admin if file doesn't exist
-
-Hli_Sham, [10/16/2025 7:49 PM]
 ofstream outFile("users.txt");
             string defaultPassword = "admin123";
             string toHash = "admin" + defaultPassword;
@@ -247,7 +244,6 @@ ofstream outFile("users.txt");
         for (auto& prop : properties) {
             if (prop.getId() == id) {
 
-Hli_Sham, [10/16/2025 7:50 PM]
 if (prop.getOwner() == currentUser || currentRole == "admin") {
                     prop.registerProperty(properties);
                     saveProperties();
@@ -343,4 +339,5 @@ int main() {
     } while (menuChoice != 7);
 
     return 0;
+
 }
